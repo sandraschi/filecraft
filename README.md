@@ -12,6 +12,17 @@ Filesystem, volume analytics, disk usage, and integrity workstation.
 - `filecraft strings --file <bin>`: Extract printable strings from binary files
 - `filecraft mcp`: FastMCP stdio server
 
+## Status — does today / next week / non-goals
+
+**Does today:** Python FastMCP workstation; 8 test fns; hash/grep/du/strings
+family; most-composed craft in the fleet.
+
+**Next week:** path-traversal confinement tests (refusal, proven); 3
+fixture recipes; photocraft-deferred note if it carries exif.
+
+**Non-goals:** recipes never touch `C:\Windows` (fixtures under fleet root
+only).
+
 ## Lineage — the Storytold craft-app pattern
 
 Storytold ArtCraft ([storytold/artcraft](https://github.com/storytold/artcraft) — "the IDE for artists") was the starting point. The 16 craft apps in the Storytold stable each ship one binary that is both the human CLI and the agent MCP server (stdio), headless-first, with `run.json` + report artifacts. That modus operandi and harness is what this repo implements; the code here is independent, the pattern is shared.
