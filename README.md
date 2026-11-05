@@ -11,3 +11,7 @@ Filesystem, volume analytics, disk usage, and integrity workstation.
 - `filecraft find-dups --path <dir>`: Duplicate file detection by byte size and hash
 - `filecraft strings --file <bin>`: Extract printable strings from binary files
 - `filecraft mcp`: FastMCP stdio server
+
+## Lineage — the Storytold craft-app pattern
+
+Storytold ArtCraft ([storytold/artcraft](https://github.com/storytold/artcraft) — "the IDE for artists") was the starting point. The 16 craft apps in the Storytold stable each ship one binary that is both the human CLI and the agent MCP server (stdio), headless-first, with `run.json` + report artifacts. That modus operandi and harness is what this repo implements; the code here is independent, the pattern is shared.
